@@ -3,6 +3,7 @@ html, body {
 	padding: 0px;
 	border: 0px;
 	overflow: hidden;
+	height: 100%;
 }
 
 p {
@@ -17,16 +18,16 @@ a {
 	color: #fff;
 }
 
-header {
+#card {
 	width: 100vw;
 	height: 100vw;
 	background-color: #39c5db;
 }
 
-footer {
+#cardSelector {
 	width: 100vw;
-	height: 100%;
 	background-color: #f16013;
+	overflow-y: auto;
 }
 
 .image {
