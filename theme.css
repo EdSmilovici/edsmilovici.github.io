@@ -15,7 +15,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 #card {
@@ -64,20 +64,18 @@ a {
     text-align: center;
 }
 
-.scrollable {
-	overflow-y: auto;
-	height: auto;
-}
-
 .selector {
-	padding: 5vw;
-	height: 40vw;
-	width: 40vw;
+	margin: 4vw;
+	border: 2vw;
+	height: 38vw;
+	width: 38vw;
+	border-style: solid;
+	border-color: #fff;
 	float: left;
 }
 
-.tmp {
+.selectorIcon {
 	height: 100%;
 	width: 100%;
-	background-color: #fff;
+	background-color: #000;
 }
