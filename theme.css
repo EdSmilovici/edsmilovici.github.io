@@ -18,17 +18,17 @@ a {
 	color: #000;
 }
 
-#card {
-	width: 100vw;
-	height: 100vw;
-	background-color: #39c5db;
-	display: none;
-}
-
 #cardSelector {
 	width: 100vw;
 	background-color: #f16013;
 	overflow-y: auto;
+}
+
+.card {
+	width: 100vw;
+	height: 100vw;
+	background-color: #39c5db;
+	display: none;
 }
 
 .selectedCard {
