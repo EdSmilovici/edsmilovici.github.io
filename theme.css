@@ -1,86 +1,80 @@
-html, body {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	overflow: hidden;
-	height: 100%;
+html {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  overflow: hidden;
+  height: 100%;
 }
-
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  overflow: hidden;
+  height: 100%;
+}
 p {
-	-webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
-
 a {
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
 }
-
 #cardSelector {
-	width: 100vw;
-	background-color: #f16013;
-	overflow-y: auto;
+  width: 100vw;
+  background-color: #f16013;
+  overflow-y: auto;
 }
-
 .card {
-	width: 100vw;
-	height: 100vw;
-	background-color: #39c5db;
-	display: none;
+  width: 100vw;
+  height: 100vw;
+  background-color: #39c5db;
+  display: none;
 }
-
 .selectedCard {
-	display: block !important;
+  display: block !important;
 }
-
 .image {
-	width: 100%;
-	height: 56%;
-	padding: 8% 0%;
+  width: 100%;
+  height: 56%;
+  padding: 8% 0%;
 }
-
 .image img {
-	height: 100%;
-    display: block;
-    margin: auto;
+  height: 100%;
+  display: block;
+  margin: auto;
 }
-
 .name {
-	width: 100%;
-	height: 10%;
+  width: 100%;
+  height: 10%;
 }
-
 .name p {
-	font-size: 8vw;
-    display: block;
-    text-align: center;
+  font-size: 8vw;
+  display: block;
+  text-align: center;
 }
-
 .handle {
-	width: 100%;
-	height: 18%;
+  width: 100%;
+  height: 18%;
 }
-
 .handle p {
-	font-size: 14vw;
-    display: block;
-    text-align: center;
+  font-size: 14vw;
+  display: block;
+  text-align: center;
 }
-
 .selector {
-	margin: 4vw;
-	border: 2vw;
-	height: 38vw;
-	width: 38vw;
-	border-style: solid;
-	border-color: #fff;
-	float: left;
+  margin: 4vw;
+  border: 2vw;
+  height: 38vw;
+  width: 38vw;
+  border-style: solid;
+  border-color: #fff;
+  float: left;
 }
-
 .selectorIcon {
-	height: 100%;
-	width: 100%;
-	background-color: #000;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
 }

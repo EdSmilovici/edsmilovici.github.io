@@ -1,0 +1,86 @@
+@color_1: #000000;
+@background_color_1: #f16013;
+@background_color_2: #39c5db;
+@background_color_3: #000000;
+@border_color_1: #ffffff;
+
+html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+	height: 100%;
+}
+p {
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+a {
+	text-decoration: none;
+	color: @color_1;
+}
+#cardSelector {
+	width: 100vw;
+	background-color: @background_color_1;
+	overflow-y: auto;
+}
+.card {
+	width: 100vw;
+	height: 100vw;
+	background-color: @background_color_2;
+	display: none;
+}
+.selectedCard {
+	display: block !important;
+}
+.image {
+	width: 100%;
+	height: 56%;
+	padding: 8% 0%;
+	img {
+		height: 100%;
+		display: block;
+		margin: auto;
+	}
+}
+.name {
+	width: 100%;
+	height: 10%;
+	p {
+		font-size: 8vw;
+		display: block;
+		text-align: center;
+	}
+}
+.handle {
+	width: 100%;
+	height: 18%;
+	p {
+		font-size: 14vw;
+		display: block;
+		text-align: center;
+	}
+}
+.selector {
+	margin: 4vw;
+	border: 2vw;
+	height: 38vw;
+	width: 38vw;
+	border-style: solid;
+	border-color: @border_color_1;
+	float: left;
+}
+.selectorIcon {
+	height: 100%;
+	width: 100%;
+	background-color: @background_color_3;
+}
