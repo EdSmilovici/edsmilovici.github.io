@@ -1,17 +1,6 @@
 function sizeSelector() {
+	var height = window.innerHeight - window.innerWidth;
 	document.getElementById("cardSelector").style.height = height+"px";
-	var tmp = ("the orientation of the device is now " + screen.orientation.angle);
-	var cardSelector = document.getElementById("cardSelector");
-    if (screen.width/screen.height >= 17750/10000) {
-    	var width = window.innerWidth - window.innerHeight;
-		cardSelector.style.width = width+"px";
-		cardSelector.style.height = "";
-    } else if (screen.width/screen.height >= 5700/10000){
-    } else {
-		var height = window.innerHeight - window.innerWidth;
-		cardSelector.style.height = height+"px";
-		cardSelector.style.width = "";
-	}
 }
 
 function showCard(){
@@ -28,7 +17,6 @@ function addEventListeners() {
 	Array.prototype.forEach.call(selectors, function(selector){
 		selector.addEventListener("click", showCard);
 	});
-	window.addEventListener("orientationchange", sizeSelector);
 }
 
 function runPostLoadFunctions(){
