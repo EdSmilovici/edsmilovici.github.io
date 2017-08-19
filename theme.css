@@ -1,3 +1,29 @@
+@media screen and (min-aspect-ratio: 17500/10000) {
+  .card {
+    width: 100vh !important;
+    height: 100vh !important;
+  }
+  .name p {
+    font-size: 8vh !important;
+  }
+  .handle p {
+    font-size: 14vh !important;
+  }
+  #cardSelector {
+    height: 100vh !important;
+    vertical-align: top;
+    margin-left: -4px;
+  }
+  #cardView {
+    vertical-align: top;
+  }
+  .selector {
+    margin: 4vh !important;
+    border: 2vh !important;
+    height: 38vh !important;
+    width: 38vh !important;
+  }
+}
 html {
   margin: 0px;
   padding: 0px;
@@ -20,7 +46,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 #cardSelector {
   width: 100vw;
@@ -70,11 +96,11 @@ a {
   height: 38vw;
   width: 38vw;
   border-style: solid;
-  border-color: #fff;
+  border-color: #ffffff;
   float: left;
 }
 .selectorIcon {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #000000;
 }
