@@ -1,12 +1,11 @@
 function sizeSelector() {
 	document.getElementById("cardSelector").style.height = height+"px";
-	var tmp = ("the orientation of the device is now " + screen.orientation.angle);
 	var cardSelector = document.getElementById("cardSelector");
-    if (screen.width/screen.height >= 17750/10000) {
+    if (window.innerWidth/window.innerHeight >= 17500/10000) {
     	var width = window.innerWidth - window.innerHeight;
 		cardSelector.style.width = width+"px";
 		cardSelector.style.height = "";
-    } else if (screen.width/screen.height >= 5700/10000){
+    } else if (window.innerWidth/window.innerHeight >= 5700/10000){
     } else {
 		var height = window.innerHeight - window.innerWidth;
 		cardSelector.style.height = height+"px";
