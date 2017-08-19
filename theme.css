@@ -48,6 +48,12 @@ a {
   text-decoration: none;
   color: #000000;
 }
+#cardView {
+  display: inline-block;
+}
+#cardSelector {
+  display: inline-block;
+}
 #cardSelector {
   width: 100vw;
   background-color: #f16013;

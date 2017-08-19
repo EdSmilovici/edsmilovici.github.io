@@ -28,6 +28,7 @@ function addEventListeners() {
 	Array.prototype.forEach.call(selectors, function(selector){
 		selector.addEventListener("click", showCard);
 	});
+	window.addEventListener("orientationchange", sizeSelector);
 }
 
 function runPostLoadFunctions(){
