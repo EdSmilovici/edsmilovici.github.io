@@ -6,7 +6,7 @@ function sizeSelector() {
     	var width = window.innerWidth - window.innerHeight;
 		cardSelector.style.width = width+"px";
 		cardSelector.style.height = "100vh";
-    } else if (window.innerWidth/window.innerHeight >= 5700/10000){
+    } else if (window.innerWidth/window.innerHeight >= 6000/10000){
     } else {
 		var height = window.innerHeight - window.innerWidth;
 		cardSelector.style.height = height+"px";
