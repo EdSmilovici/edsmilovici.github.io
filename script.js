@@ -12,6 +12,7 @@ function sizeSelector() {
 		cardSelector.style.height = height+"px";
 		cardSelector.style.width = "100vw";
 	}
+	console.log(window.innerWidth + "/" + window.innerHeight);
 }
 
 function showCard(){
