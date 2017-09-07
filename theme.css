@@ -18,10 +18,18 @@
     vertical-align: top;
   }
   .selector {
-    margin: 4vh !important;
-    border: 2vh !important;
-    height: 38vh !important;
-    width: 38vh !important;
+    margin: 4vh;
+    border: 2vh;
+    height: 38vh;
+    width: 38vh;
+  }
+}
+@media screen and (max-aspect-ratio: 17500/10000) {
+  .selector {
+    margin: 4vw;
+    border: 2vw;
+    height: 38vw;
+    width: 38vw;
   }
 }
 html {
@@ -97,10 +105,6 @@ a {
   text-align: center;
 }
 .selector {
-  margin: 4vw;
-  border: 2vw;
-  height: 38vw;
-  width: 38vw;
   border-style: solid;
   border-color: #ffffff;
   float: left;
