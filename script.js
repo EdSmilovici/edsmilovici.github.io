@@ -14,7 +14,6 @@ function sizeSelector() {
 		cardSelector.css('height', height+"px");
 		cardSelector.css('width', "100vw");
 	}
-	console.log(window.innerWidth + "/" + window.innerHeight);
 }
 
 function showCard(){
