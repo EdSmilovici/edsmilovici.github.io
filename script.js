@@ -1,16 +1,18 @@
+$(window).on("load", runPostLoadFunctions);
+
 function sizeSelector() {
 	var height = window.innerHeight - window.innerWidth;
-	document.getElementById("cardSelector").style.height = height+"px";
-	var cardSelector = document.getElementById("cardSelector");
+	var cardSelector = $("#cardSelector");
+	cardSelector.css('height', height+"px");
     if (window.innerWidth/window.innerHeight >= 17500/10000) {
     	var width = window.innerWidth - window.innerHeight;
-		cardSelector.style.width = width+"px";
-		cardSelector.style.height = "100vh";
+		cardSelector.css('width', width+"px");
+		cardSelector.css('height', "100vh");
     } else if (window.innerWidth/window.innerHeight >= 7000/10000){
     } else {
 		var height = window.innerHeight - window.innerWidth;
-		cardSelector.style.height = height+"px";
-		cardSelector.style.width = "100vw";
+		cardSelector.css('height', height+"px");
+		cardSelector.css('width', "100vw");
 	}
 	console.log(window.innerWidth + "/" + window.innerHeight);
 }
