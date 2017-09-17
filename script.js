@@ -1,20 +1,22 @@
 $(window).ready(runPostLoadFunctions);
 
 function sizeSelector() {
-	var height = window.innerHeight - window.innerWidth;
+	var viewportHeight = $(window).height();
+	var viewportWidth = $(window).width();
+	var height = viewportWidth - viewportWidth;
 	var cardSelector = $("#cardSelector");
 	cardSelector.css('height', height+"px");
-    if (window.innerWidth/window.innerHeight >= 17500/10000) {
-    	var width = window.innerWidth - window.innerHeight;
+    if (viewportWidth/viewportHeight >= 17500/10000) {
+    	var width = viewportWidth - viewportHeight;
 		cardSelector.css('width', width+"px");
 		cardSelector.css('height', "100vh");
-    } else if (window.innerWidth/window.innerHeight >= 7000/10000){
+    } else if (viewportWidth/viewportHeight >= 7000/10000){
     } else {
-		var height = window.innerHeight - window.innerWidth;
+		var height = viewportHeight - viewportWidth;
 		cardSelector.css('height', height+"px");
 		cardSelector.css('width', "100vw");
 	}
-	$('#snapchatCard a .handle p')[0].textContent = window.innerWidth + '/' + window.innerHeight;
+	$('#snapchatCard a .handle p')[0].textContent = viewportWidth + '/' + viewportHeight;
 }
 
 function showCard(){
