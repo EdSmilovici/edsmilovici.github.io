@@ -1,4 +1,4 @@
-$(window).on("load", runPostLoadFunctions);
+$(window).ready(runPostLoadFunctions);
 
 function sizeSelector() {
 	var height = window.innerHeight - window.innerWidth;
