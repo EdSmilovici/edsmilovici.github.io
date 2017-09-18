@@ -85,12 +85,34 @@ a {
 .card {
 	width: 70vw;
 	height: 70vw;
-	padding: 15vw;
+	padding: 15vw 0;
 	background-color: @background_color_2;
 	display: none;
 }
+.sideBar {
+	width: 15vw;
+	height: 100vw;
+    float: left;
+	background-color: @background_color_2;
+	.arrowContainer {
+		padding: 42.5vw 0;
+		height: 15vw;
+		width: 15vw;
+		.arrow {
+			width: 10.6vw;
+			height: 10.6vw;
+			background-color: @border_color_1;
+			transform: rotate(-45deg);
+			-moz-transform:rotate(-45deg);
+			-ms-transform:rotate(-45deg);
+			-o-transform:rotate(-45deg);
+			-webkit-transform:rotate(-45deg);
+		}
+	}
+}
 .selectedCard {
 	display: block !important;
+	float: left;
 }
 .image {
 	width: 100%;

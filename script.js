@@ -11,6 +11,9 @@ function sizeSelector() {
 		cardSelector.css('width', width+"px");
 		cardSelector.css('height', "100vh");
     } else if (viewportWidth/viewportHeight >= 7000/10000){
+		var height = viewportHeight - viewportWidth;
+		cardSelector.css('height', height+"px");
+		cardSelector.css('width', "100vw");
     } else {
 		var height = viewportHeight - viewportWidth;
 		cardSelector.css('height', height+"px");
@@ -33,6 +36,7 @@ function addEventListeners() {
 		selector.addEventListener("click", showCard);
 	});
 	window.addEventListener("orientationchange", sizeSelector);
+	window.addEventListener("resize", sizeSelector);
 }
 
 function runPostLoadFunctions(){
