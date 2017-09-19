@@ -9,7 +9,20 @@
 	.card {
 		width: 70vh !important;
 		height: 70vh !important;
-		padding: 15vh !important;
+		padding: 15vh 0 !important;
+	}
+	.sideBar {
+		width: 15vh !important;
+		height: 100vh !important;
+		.arrowContainer {
+			padding: 42.5vh 0 !important;
+			height: 15vh !important;
+			width: 15vh !important;
+			.arrow {
+				width: 10.6vh !important;
+				height: 10.6vh !important;
+			}
+		}
 	}
 	.name {
 		p {
@@ -73,6 +86,7 @@ a {
 }
 #cardView {
 	display: inline-block;
+	background-color: @background_color_2;
 }
 #cardSelector{
 	display: inline-block;
@@ -102,14 +116,18 @@ a {
 			width: 10.6vw;
 			height: 10.6vw;
 			background-color: @border_color_1;
-			transform: rotate(-45deg);
-			-moz-transform:rotate(-45deg);
-			-ms-transform:rotate(-45deg);
-			-o-transform:rotate(-45deg);
-			-webkit-transform:rotate(-45deg);
 		}
 	}
 }
+
+#left.sideBar .arrowContainer .arrow {
+	transform: rotate(-45deg) translateX(7.5vw);
+	-moz-transform: rotate(-45deg) translateX(7.5vw);
+	-ms-transform: rotate(-45deg) translateX(7.5vw);
+	-o-transform: rotate(-45deg) translateX(7.5vw);
+	-webkit-transform: rotate(-45deg) translateX(7.5vw);
+}
+
 .selectedCard {
 	display: block !important;
 	float: left;
