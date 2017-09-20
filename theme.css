@@ -14,8 +14,7 @@
     width: 15vh !important;
   }
   .sideBar .arrowContainer .arrow {
-    width: 10.6vh !important;
-    height: 10.6vh !important;
+    padding: 5.3vh !important;
   }
   .name p {
     font-size: 8vh !important;
@@ -101,9 +100,10 @@ a {
   width: 15vw;
 }
 .sideBar .arrowContainer .arrow {
-  width: 10.6vw;
-  height: 10.6vw;
-  background-color: #ffffff;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5.3vw;
 }
 #left.sideBar .arrowContainer .arrow {
   transform: rotate(-45deg) translateX(7.5vw);
@@ -115,6 +115,22 @@ a {
 .selectedCard {
   display: block !important;
   float: left;
+}
+.right {
+  float: left;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  float: right;
+  transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 .image {
   width: 100%;
