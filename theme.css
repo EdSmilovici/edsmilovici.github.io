@@ -1,29 +1,29 @@
 @media screen and (min-aspect-ratio: 17500/10000) {
   .card {
-    width: 70vh !important;
-    height: 70vh !important;
-    padding: 15vh 0 !important;
+    width: 70vh;
+    height: 70vh;
+    padding: 15vh 0;
   }
   .sideBar {
-    width: 15vh !important;
-    height: 100vh !important;
+    width: 15vh;
+    height: 100vh;
   }
   .sideBar .arrowContainer {
-    padding: 42.5vh 0 !important;
-    height: 15vh !important;
-    width: 15vh !important;
+    padding: 42.5vh 0;
+    height: 15vh;
+    width: 15vh;
   }
   .sideBar .arrowContainer .arrow {
-    padding: 5.3vh !important;
+    padding: 5.3vh;
   }
   .name p {
-    font-size: 8vh !important;
+    font-size: 8vh;
   }
   .handle p {
-    font-size: 10vh !important;
+    font-size: 10vh;
   }
   #cardSelector {
-    height: 100vh !important;
+    height: 100vh;
     vertical-align: top;
     margin-left: -4px;
   }
@@ -38,6 +38,32 @@
   }
 }
 @media screen and (max-aspect-ratio: 17500/10000) {
+  .card {
+    width: 70vw;
+    height: 70vw;
+    padding: 15vw 0;
+  }
+  .sideBar {
+    width: 15vw;
+    height: 100vw;
+  }
+  .sideBar .arrowContainer {
+    padding: 42.5vw 0;
+    height: 15vw;
+    width: 15vw;
+  }
+  .sideBar .arrowContainer .arrow {
+    padding: 5.3vw;
+  }
+  .name p {
+    font-size: 8vw;
+  }
+  .handle p {
+    font-size: 10vw;
+  }
+  #cardSelector {
+    width: 100vw;
+  }
   .selector {
     margin: 4vw;
     border: 2vw;
@@ -75,35 +101,21 @@ a {
 }
 #cardSelector {
   display: inline-block;
-}
-#cardSelector {
-  width: 100vw;
   background-color: #f16013;
   overflow-y: auto;
 }
 .card {
-  width: 70vw;
-  height: 70vw;
-  padding: 15vw 0;
   background-color: #39c5db;
   display: none;
 }
 .sideBar {
-  width: 15vw;
-  height: 100vw;
   float: left;
   background-color: #39c5db;
-}
-.sideBar .arrowContainer {
-  padding: 42.5vw 0;
-  height: 15vw;
-  width: 15vw;
 }
 .sideBar .arrowContainer .arrow {
   border: solid #ffffff;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 5.3vw;
 }
 #left.sideBar .arrowContainer .arrow {
   transform: rotate(-45deg) translateX(7.5vw);
@@ -113,7 +125,7 @@ a {
   -webkit-transform: rotate(-45deg) translateX(7.5vw);
 }
 .selectedCard {
-  display: block !important;
+  display: block;
   float: left;
 }
 .right {
@@ -147,7 +159,6 @@ a {
   height: 10%;
 }
 .name p {
-  font-size: 8vw;
   display: block;
   text-align: center;
 }
@@ -156,7 +167,6 @@ a {
   height: 18%;
 }
 .handle p {
-  font-size: 10vw;
   display: block;
   text-align: center;
 }
