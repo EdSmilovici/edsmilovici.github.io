@@ -36,10 +36,10 @@
     vertical-align: top;
   }
   .selector {
-    margin: 4vh;
-    border: 2vh;
-    height: 38vh;
-    width: 38vh;
+    margin: calc(0.04 * (100vw - 100vh));
+    border: calc(0.02 * (100vw - 100vh));
+    height: calc(0.38 * (100vw - 100vh));
+    width: calc(0.38 * (100vw - 100vh));
   }
 }
 @media screen and (max-aspect-ratio: 17500/10000) {
