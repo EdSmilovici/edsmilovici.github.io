@@ -22,8 +22,13 @@
   .handle p {
     font-size: 10vh;
   }
-  #cardSelector {
+  .cardViewPlaceHolder {
+    width: 100vh;
     height: 100vh;
+    display: inline-block;
+  }
+  #cardSelector {
+    width: calc(100vw - 100vh);
     vertical-align: top;
     margin-left: -4px;
   }
@@ -61,6 +66,10 @@
   .handle p {
     font-size: 10vw;
   }
+  .cardViewPlaceHolder {
+    width: 100vw;
+    height: 100vw;
+  }
   #cardSelector {
     width: 100vw;
   }
@@ -75,14 +84,12 @@ html {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  overflow: hidden;
   height: 100%;
 }
 body {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  overflow: hidden;
   height: 100%;
 }
 p {
@@ -98,6 +105,10 @@ a {
 #cardView {
   display: inline-block;
   background-color: #39c5db;
+}
+#cardView {
+  position: fixed;
+  top: 0;
 }
 #cardSelector {
   display: inline-block;
