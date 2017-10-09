@@ -30,7 +30,7 @@
 	}
 	.handle {
 		p {
-			font-size: 10vh;
+			font-size: 8vh;
 		}
 	}
 	#cardSelector {
@@ -49,8 +49,51 @@
 	}
 }
 
+@media screen and (min-aspect-ratio: 10000/17501) and (max-aspect-ratio: 17499/10000) {
+	.card {
+		width: 35vh;
+		height: 35vh;
+		padding: 7.5vh 0;
+	}
+	.sideBar {
+		width: 7.5vh;
+		height: 50vh;
+		.arrowContainer {
+			padding: 21.25vh 0;
+			height: 7.5vh;
+			width: 7.5vh;
+			.arrow {
+				padding: 2.65vh;
+			}
+		}
+	}
+	.name {
+		p {
+			font-size: 4vh;
+		}
+	}
+	.handle {
+		p {
+			font-size: 4vh;
+		}
+	}
+	#cardSelector {
+		width: 50vh;
+		margin-top: 50vh;
+		padding: 0 ~"calc(50vw - 25vh)";
+	}
+	#cardView {
+		padding: 0 ~"calc(50vw - 25vh)";
+	}
+	.selector {
+		margin: 2vh;
+		border: 1vh;
+		height: 19vh;
+		width: 19vh;
+	}
+}
 
-@media screen and (max-aspect-ratio: 17500/10000) {
+@media screen and (max-aspect-ratio: 10000/17500) {
 	.card {
 		width: 70vw;
 		height: 70vw;
@@ -75,7 +118,7 @@
 	}
 	.handle {
 		p {
-			font-size: 10vw;
+			font-size: 8vw;
 		}
 	}
 	#cardSelector {
