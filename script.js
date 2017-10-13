@@ -5,6 +5,7 @@ function showCard(){
 		card.classList.remove('selectedCard');
 	});
 	newlyVisibleCard.classList.add('selectedCard');
+	history.pushState({}, '', '?card='+this.id);
 }
 
 function showNextCard(){
@@ -34,6 +35,7 @@ function showNextCard(){
 		newlyVisibleCardIndex = cards.length - 1;
 	}
 	cards[newlyVisibleCardIndex].classList.add('selectedCard');
+	history.pushState({}, '', '?card='+cards[newlyVisibleCardIndex].id.slice(0, -4));
 }
 
 function addEventListeners() {
@@ -47,6 +49,17 @@ function addEventListeners() {
 	});
 }
 
+function selectCardBasedOnUrl() {
+    var url = window.location.href;
+    name = "card";
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results || !results[2]) return null;
+	var selectedCard = decodeURIComponent(results[2].replace(/\+/g, " "));
+	showCard.call({id : selectedCard});
+}
+
 function runPostLoadFunctions(){
 	addEventListeners();
+	selectCardBasedOnUrl();
 }
