@@ -75,6 +75,15 @@
     height: 19vh;
     width: 19vh;
   }
+  @-moz-document url-prefix() {
+    body {
+      overflow: hidden;
+    }
+    #scrollableBody {
+      overflow: auto;
+      height: 100vh;
+    }
+  }
 }
 @media screen and (max-aspect-ratio: 10000/17500) {
   .card {
@@ -109,6 +118,15 @@
     border: 2vw;
     height: 38vw;
     width: 38vw;
+  }
+  @-moz-document url-prefix() {
+    body {
+      overflow: hidden;
+    }
+    #scrollableBody {
+      overflow: auto;
+      height: 100vh;
+    }
   }
 }
 html {

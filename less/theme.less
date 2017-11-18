@@ -91,6 +91,15 @@
 		height: 19vh;
 		width: 19vh;
 	}
+	@-moz-document url-prefix() {
+		body {
+			overflow: hidden;
+		}
+		#scrollableBody{
+			overflow: auto;
+			height: 100vh;
+		}
+	}
 }
 
 @media screen and (max-aspect-ratio: 10000/17500) {
@@ -130,6 +139,15 @@
 		border: 2vw;
 		height: 38vw;
 		width: 38vw;
+	}
+	@-moz-document url-prefix() {
+		body {
+			overflow: hidden;
+		}
+		#scrollableBody{
+			overflow: auto;
+			height: 100vh;
+		}
 	}
 }
 
@@ -254,7 +272,7 @@ a {
 
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+	background: transparent;  /* optional: just make scrollbar invisible */
 }
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
